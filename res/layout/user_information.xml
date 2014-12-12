@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/user_info_title"
+        style="@style/Text"
+        android:layout_centerHorizontal="true"
+        android:text="@string/user_info_title" />
+
+    <EditText
+        android:id="@+id/name_edit"
+        style="@style/EditText"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/user_info_title"
+        android:hint="@string/name"
+        android:minWidth="250dp" />
+
+    <TextView
+        style="@style/Text"
+        android:layout_below="@id/user_info_title"
+        android:text="@string/name" />
+
+    <RadioGroup
+        android:id="@+id/sex_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/name_edit"
+        android:minWidth="250dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/female_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female" />
+
+        <RadioButton
+            android:id="@+id/male_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male" />
+    </RadioGroup>
+
+    <TextView
+        style="@style/Text"
+        android:layout_below="@id/name_edit"
+        android:text="@string/sex" />
+
+    <EditText
+        android:id="@+id/age_edit"
+        style="@style/EditText"
+        android:layout_alignLeft="@id/name_edit"
+        android:layout_below="@id/sex_check"
+        android:hint="@string/age"
+        android:minWidth="150dp" />
+
+    <TextView
+        style="@style/Text"
+        android:layout_below="@id/sex_check"
+        android:text="@string/age" />
+    
+    <EditText
+        android:id="@+id/height_edit"
+        style="@style/EditText"
+        android:layout_alignLeft="@id/name_edit"
+        android:layout_below="@id/age_edit"
+        android:hint="@string/height"
+        android:minWidth="150dp" />
+
+    <TextView
+        style="@style/Text"
+        android:layout_below="@id/age_edit"
+        android:text="@string/height" />
+
+    <EditText
+        android:id="@+id/weight_edit"
+        style="@style/EditText"
+        android:layout_alignLeft="@id/height_edit"
+        android:layout_below="@id/height_edit"
+        android:hint="@string/weight"
+        android:minWidth="150dp" />
+
+    <TextView
+        style="@style/Text"
+        android:layout_below="@id/height_edit"
+        android:text="@string/weight" />
+
+    <Button
+        style="@style/Button"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/weight_edit"
+        android:text="@string/save" 
+        android:id="@+id/save_button"
+        />
+    <Button
+        style="@style/Button"
+        android:layout_below="@id/weight_edit"
+        android:text="@string/back" 
+        android:id="@+id/back_button"
+        />
+
+</RelativeLayout>

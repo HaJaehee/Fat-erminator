@@ -1,0 +1,46 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.faterminator"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="19" />
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+   		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name="com.app.faterminator.HomePage"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.app.faterminator.UserInformation"
+            android:label="@string/app_name"
+            />
+        <activity android:name="com.app.faterminator.Menu"
+            android:label="@string/app_name"
+            />
+        <activity android:name="com.app.faterminator.Exercising"
+            android:label="@string/app_name"
+            />
+        <activity android:name="com.app.faterminator.ExerciseProgram"
+            android:label="@string/app_name"
+            />
+        <activity android:name="com.app.faterminator.History"
+            android:label="@string/app_name"
+            />
+        <activity android:name="com.app.faterminator.TipMenu"
+            android:label="@string/app_name"
+            />
+    </application>
+
+</manifest>

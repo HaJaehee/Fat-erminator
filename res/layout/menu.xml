@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/menu_title"
+        style="@style/Text"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_name" />
+
+    <Button
+        style="@style/ButtonMenu"
+        android:id="@+id/button_menu1"
+        android:layout_below="@id/menu_title"
+        android:text="@string/menu1" />
+    <Button
+        style="@style/ButtonMenu"
+        android:id="@+id/button_menu2"
+        android:layout_below="@id/button_menu1"
+        android:text="@string/menu2" />
+    <Button
+        style="@style/ButtonMenu"
+        android:id="@+id/button_menu3"
+        android:layout_below="@id/button_menu2"
+        android:text="@string/menu3" />
+    <Button
+        style="@style/ButtonMenu"
+        android:id="@+id/button_menu4"
+        android:layout_below="@id/button_menu3"
+        android:text="@string/menu4" />
+    <Button
+        style="@style/ButtonMenu"
+        android:id="@+id/button_menu5"
+        android:layout_below="@id/button_menu4"
+        android:text="@string/menu5" />
+
+</RelativeLayout>
